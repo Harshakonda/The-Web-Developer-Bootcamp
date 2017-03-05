@@ -1,0 +1,23 @@
+.align{
+text-align: center;
+}
+.table_align{
+margin: auto;
+}
+
+
+.table{
+	width: 100px;
+	height: 100px;
+}
+.row11{
+	border-right: 1px solid black;
+	border-bottom: 1px solid black
+}
+
+.row13{
+	border-bottom: 1px solid black
+}
+.row31{
+	border-right: 1px solid black
+}
