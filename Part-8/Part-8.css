@@ -1,0 +1,40 @@
+.setBody{
+	border: 15px solid #bfbfbf;
+	padding: 20px;
+	margin: 20px auto 20px auto;
+	width: 60%;
+}
+
+.letter{
+	letter-spacing: 3px;
+	color: #66a3ff;
+	text-transform: uppercase;
+}
+h2{
+	color: #000080;
+}
+.setBorder{
+	border-left: 4px solid #bfbfbf;
+	padding-left: 4px;
+}
+.Summary{
+	font-family: "Baskerville Old Face";
+	color: #006666;
+}
+
+/*  from https://css-tricks.com/examples/hrs/ */
+/*hr {
+    border: 0;
+    height: 0; 
+    box-shadow: 0 0 10px 1px black;
+}
+hr:after {  
+    content: "\00a0";  
+}
+*/
+hr{
+    border: 0;
+    height: 0;
+    border-top: 1px solid rgba(0, 0, 0, 0.1);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
