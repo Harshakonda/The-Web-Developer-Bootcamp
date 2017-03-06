@@ -2,15 +2,15 @@
 <html>
 <head>
 	<title>Bootstarp Project!!</title>
-	<link rel="stylesheet" type="text/css" href="Part-9.css">
 	<!-- not working for some reason -->
 	<!-- <link rel="stylesheet" type="text/css" href="bootstrap.css"> -->
 	<!-- Latest compiled and minified CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+<link rel="stylesheet" type="text/css" href="Part-9.css">
 </head>
 <body>
 <!-- Nav Bar -->
-<nav class="navbar navbar-default">
+<nav class="navbar navbar-inverse navbar-fixed-top">
   <div class="container">
     <!-- Brand and toggle get grouped for better mobile display -->
     <div class="navbar-header">
@@ -20,7 +20,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand glyphicon glyphicon-picture" href="#">Images</a>
+      <a class="navbar-brand" href="#"><span class="glyphicon glyphicon-picture"></span> Images</a>
     </div>
 
     <!-- Collect the nav links, forms, and other content for toggling -->
@@ -68,28 +68,68 @@
 
 <div class="container">
 <!-- jumbotron -->
-<div class="jumbotron">
-  <h1 class="glyphicon glyphicon-camera">The Image Gallery</h1>
+<div class="jumbotron ">
+  <h1><span class="glyphicon glyphicon-camera"></span> The Image Gallery</h1>
   <p>A bunch of beautiful images that I didnt take!!</p>
 </div>
 <!-- jumbotron -->
 <!-- Images in Grid System -->
 <div class="row">
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/daily"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/category/nature/weekly"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/collection/190727/1600x900"></div>
-</div>
-<div class="row">
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/category/nature/1600x900"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/category/buildings/?montreal"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/WLUHO9A_xik/1600x900"></div>
-</div>
-<div class="row">
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/1600x900/?nature,water"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/user/erondu"></div>
-	<div class="col-md-4 col-sm-4 image"><img src="https://source.unsplash.com/daily"></div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/daily">
 </div>
 </div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/user/erondu">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/1600x900/?nature,water">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/WLUHO9A_xik/1600x900">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/category/buildings/?montreal">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/category/buildings/?montreal">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/category/nature/1600x900">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/collection/190727/1600x900">
+</div>
+</div>
+<div class="col-lg-4">
+<div class="thumbnail">
+  <img src="https://source.unsplash.com/category/nature/weekly">
+</div>
+</div>
+	<!-- <div class="col-lg-4 col-md-6 col-sm-6  divSetting "><div class="thumbnail"><img class="image" src="https://source.unsplash.com/daily"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/category/nature/weekly"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/collection/190727/1600x900"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/category/nature/1600x900"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/category/buildings/?montreal"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/WLUHO9A_xik/1600x900"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/1600x900/?nature,water"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/user/erondu"></div></div>
+	<div class="col-lg-4 col-md-6 col-sm-6 divSetting"><div class="thumbnail"><img class="image" src="https://source.unsplash.com/daily"></div></div>
+</div> -->
 
 <!-- Images in Grid System -->
 </div>
