@@ -1,0 +1,26 @@
+body{
+	background: url(http://all4desktop.com/data_images/1152%20x%20864/4201312-autumn-road-normal.jpg);
+	background-repeat:no-repeat;
+	 background-size:cover;
+	 background-position: center;
+	 color: white;
+}
+.product{
+	text-align: center;
+	padding-top: 25%;
+	text-shadow: 0px 4px 3px red,
+				 0px 8px 13px orange,
+				 0px 18px 23px white;
+}
+html{
+	height: 100%
+}
+
+h1{
+	font-weight:700 ;
+	font-size: 5em;
+}
+
+hr{
+	width: 400px;
+}
