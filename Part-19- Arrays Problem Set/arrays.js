@@ -74,3 +74,48 @@ function max1(m1){
 	return max2
 }
 
+
+var movie = [{title:"Mad Max",Rating: 4.5, asWatched : true},
+			{title:"horror",Rating: 5, asWatched : false},
+			{title:"Drama movie",Rating: 4, asWatched : true},
+			{title:"Thriller movies",Rating: 4.5, asWatched : 'hhbh'}]
+/*function movie1(){			
+	for (var i = 0 ; i < movie.length ; i++){
+		console.log( "You have seen " +  movie[i].title + " - " + movie[1].Rating + " stars")
+			}
+		}*/
+var isWatched = "";
+		function movie1(){			
+		movie.forEach(function (ele,i){debugger;
+			if(movie[i].asWatched === true){
+				 isWatched = "watched";
+			}
+			else if (movie[i].asWatched === false){
+				 isWatched = "not seen";
+			}
+			else{
+				 isWatched = '**invalid**';	
+			}
+			console.log( "You have " + isWatched + " "+  movie[i].title + " - " + movie[i].Rating + " stars")
+		})
+		}
+
+
+
+
+
+
+var comments = {};
+comments.data = ["good work ", "well done !!", "awasome", "keep it up"];
+
+/*comments.print = function (arr){
+	arr.forEach(function(ele){
+		console.log(ele);
+	})
+}*/
+
+comments.print = function(){
+	this.data.forEach(function(ele){
+		 console.log(ele)
+	})
+}
