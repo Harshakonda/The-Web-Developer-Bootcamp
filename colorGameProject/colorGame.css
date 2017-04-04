@@ -1,0 +1,23 @@
+.gridCell{
+	height: 150px;
+	width: 30%;
+	background-color: red;
+	margin : 1.66%;
+}
+.back{
+	background-color: #232323;
+}
+#container{
+	max-width: 600px;
+	margin: 0 auto;
+
+}
+h1{
+	color: white;
+}
+#result{
+	color: white;
+}
+#header{
+	margin-top: 0px;
+}
