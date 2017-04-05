@@ -1,4 +1,5 @@
- var colors = getRandomColors(6);
+ var numSqaures = 6;
+ var colors = getRandomColors(numSqaures);
  var sqaure = document.querySelectorAll('.gridCell');
  var pickedColor = pickColor();
  var idColor = document.querySelector('#idColor');
@@ -55,8 +56,8 @@
  }
 
  reset.addEventListener('click',function(){
- 	header.style.background = 'blue';
- 	colors = getRandomColors(6);
+ 	header.style.background = '#4682b4';
+ 	colors = getRandomColors(numSqaures);
  	pickedColor = pickColor();
  	idColor.textContent = pickedColor;
  	 for(var i = 0; i< sqaure.length; i++){
@@ -67,21 +68,36 @@
  	reset.textContent = 'New Colors';
  })
  easy.addEventListener('click',function(){
+ 	header.style.background = '#4682b4';
  	easy.classList.add('selected');
  	hard.classList.remove('selected');
- 	colors = getRandomColors(3);
+ 	numSqaures = 3;
+ 	colors = getRandomColors(numSqaures);
  	pickedColor = pickColor();
  	idColor.textContent = pickedColor;
- 	//  for(var i = 0; i< 4; i++){
- 	// 	//add initial colors
- 	//  	sqaure[i].style.background = colors[i];
- 	// }
+ 	 for(var i = 0; i< sqaure.length; i++){
+ 		if(colors[i]){
+ 			sqaure[i].style.background = colors[i];
+ 		}else{
+ 			sqaure[i].style.display = 'none';
+ 		}
+ 	}
+ 	result.textContent = '';
+ 	reset.textContent = 'New Colors';
  })
-
+ 
  hard.addEventListener('click',function(){
+ 		header.style.background = '#4682b4';
  		easy.classList.remove('selected');
  		hard.classList.add('selected');
- 		colors = getRandomColors(6);
+ 		numSqaures = 6;
+ 		colors = getRandomColors(numSqaures);
  		pickedColor = pickColor();
  		idColor.textContent = pickedColor;
+ 		for(var i = 0; i< colors.length; i++){
+ 			sqaure[i].style.background = colors[i];
+ 			sqaure[i].style.display = 'block';
+ 			}
+ 		result.textContent = '';
+ 		reset.textContent = 'New Colors';
  })
