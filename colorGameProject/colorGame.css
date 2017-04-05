@@ -14,10 +14,17 @@
 }
 h1{
 	color: white;
+	background-color: blue;
 }
-#result{
-	color: white;
-}
-#header{
+.header{
 	margin-top: 0px;
+	margin-bottom: 0px
+}
+#stripe{
+	background-color: white;
+	text-align: center;
+}
+.selected{
+	background-color: blue;
+	color: white;
 }
