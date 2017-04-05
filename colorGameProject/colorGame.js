@@ -90,7 +90,7 @@
  		}
  	 	
  	}
- 	result.textContent = '';
+ 	result.textContent = 'Guess a Color';
  	reset.textContent = 'New Colors';
  }
   //reset Listener
