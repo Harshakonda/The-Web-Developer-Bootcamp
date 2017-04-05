@@ -4,7 +4,7 @@ body{
 .gridCell{
 	height: 150px;
 	width: 30%;
-	background-color: red;
+	background-color: #232323;
 	margin : 1.66%;
 	border-radius: 15%;
 	transition: background 0.5s;
