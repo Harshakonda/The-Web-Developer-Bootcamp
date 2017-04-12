@@ -10,7 +10,8 @@ ul {
 }
 
 #container{
-	width: 30%;
+	/*width: 30%;*/
+	max-width: 400px;
 	margin : 80px auto;
 	text-align: left;
 }
@@ -43,6 +44,7 @@ input{
 }
 li{
 	background: yellow;
+	outline: none;
 }
 .liClass{
 	padding:  5px 5%;
