@@ -17,6 +17,7 @@ ul {
 }
 h3 span{
 	float: right;
+	cursor: pointer;
 }
 h3{
 	margin: 0;
@@ -42,10 +43,20 @@ input{
 	width: 5%;
 	text-align: center;
 }
+/*.fa {
+	display: none !important;
+}*/
 li{
 	background: yellow;
 	outline: none;
 }
 .liClass{
 	padding:  5px 5%;
+}
+.toogleLis{
+	text-decoration: line-through;
+	color: #666666
+}
+.plusIcon{
+	display: none;
 }
