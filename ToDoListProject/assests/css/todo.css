@@ -1,5 +1,7 @@
 body{
-	background-color: pink;
+	background: #2BC0E4;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #EAECC6, #2BC0E4);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #EAECC6, #2BC0E4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 	font-family: "Courier New", Courier, monospace;
 }
 
@@ -11,9 +13,11 @@ ul {
 
 #container{
 	/*width: 30%;*/
+	background-color: #f7f7f7;
 	max-width: 400px;
 	margin : 80px auto;
 	text-align: left;
+	box-shadow: 0 0 3px rgba(0,0,0,0.1)
 }
 h3 span{
 	float: right;
@@ -21,42 +25,71 @@ h3 span{
 }
 h3{
 	margin: 0;
-	padding: 5px 5%;
-	background: #4682b4;
+	padding: 10px 20px;
+	background: #2980b9;
 	color: #FFFFFF;
+	font-size:  24px;
+	font-weight: normal;
 }
 input{
-	width: 90%;
-	padding: 7px 5%;
-	outline: none;
-	border-width: 0;
-	color: #666666;
+	width: 100%;
+	background-color: #f7f7f7;
+	padding: 10px 20px;
+	/*outline: none;*/
+	box-sizing: border-box;
+	border: 3px solid rgba(0,0,0,0);
+	color: #2980b9;
 	font-weight: 600;
 	font-family: Arial, Helvetica, sans-serif;
 	line-height: 150%;
 
 }
-.fa-trash{	
+input:focus{
+	outline: none;
+	background-color: #fff;
+	border: 3px solid #2980b9;
+}
+.delete{	
 	background: red;
 	color: white;
-	padding: 5px 3px;
-	width: 5%;
+	width: 0;
 	text-align: center;
+	margin-right: 20px;
+	display: inline-block;
+	height: 30px;
+	transition: 0.2s linear;
+	opacity: 0;
 }
-/*.fa {
-	display: none !important;
-}*/
+li:hover .delete{
+	width: 40px;
+	opacity: 1.0;  
+}
+.fa {
+	padding-top: 10px;
+}
 li{
-	background: yellow;
 	outline: none;
+	background-color: #fff;
+	height: 40px;
+	line-height: 40px;
+	color: #666;
+	font-weight: bold;
+
 }
-.liClass{
+li:nth-child(2n){
+	background-color: #f7f7f7;
+}
+/*.liClass{
 	padding:  5px 5%;
-}
+}*/
 .toogleLis{
 	text-decoration: line-through;
-	color: #666666
+	color: #666666;
+	font-weight: normal;
 }
 .plusIcon{
 	display: none;
+}
+.modify{
+		padding-top: 0;
 }
